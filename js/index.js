@@ -27,7 +27,7 @@ searchInput.onkeydown = (e) => {
 
 function Search() {
   const city = searchInput.value;
-  const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&lang=pl&units=metric&appid=${apiKey}`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=pl&units=metric&appid=${apiKey}`;
 
   fetch(url)
     .then((response) => response.json())
